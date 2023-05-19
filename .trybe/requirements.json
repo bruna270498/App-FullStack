@@ -1,0 +1,12 @@
+{
+  "requirements": [
+    {
+      "bonus": true,
+      "description": "Realizar projeto",
+      "enabled": true,
+      "identifier": null,
+      "order": 1,
+      "skill_ids": []
+    }
+  ]
+}
