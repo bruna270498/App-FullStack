@@ -90,8 +90,8 @@ O projeto é composto de 4 entidades importantes para sua estrutura:
   <summary><strong>🗓 Data de Entrega</strong></summary>
 
 - Este projeto é em grupo;
-- Serão `X` dias de projeto;
-- Data de entrega para avaliação regular do projeto: `DD/MM/YYYY - 14:00h`.
+- Serão `4` dias de projeto;
+- Data de entrega para avaliação regular do projeto: `24/05/2023 00:00`.
 
   </details>
 
@@ -122,7 +122,7 @@ Leia essa parte atentamente, pois aqui você encontrará informações important
 - Agora crie uma branch à qual você vai submeter os `commits` do seu projeto
 
 - Você deve criar uma branch no seguinte formato: `nome-de-usuario-nome-do-projeto`
-  * Exemplo: `git checkout -b maria-sd-0x-project-recipes-app-full-stack`
+  * Exemplo: `git checkout -b maria-sd-026-a-project-recipes-app-full-stack`
 
   4. Adicione as mudanças ao _stage_ do Git e faça um `commit`
 - Verifique que as mudanças ainda não estão no _stage_
@@ -137,15 +137,15 @@ Leia essa parte atentamente, pois aqui você encontrará informações important
           * `git status` (deve aparecer uma mensagem tipo _nothing to commit_ )
 
   5. Adicione a sua branch com o novo `commit` ao repositório remoto
-- Usando o exemplo anterior: `git push -u origin joaozinho-sd-0x-project-recipes-app-full-stack`
+- Usando o exemplo anterior: `git push -u origin joaozinho-sd-026-a-project-recipes-app-full-stack`
 
   6. Crie um novo `Pull Request` _(PR)_
-- Vá até a página de _Pull Requests_ do [repositório no GitHub](https://github.com/tryber/sd-0x-project-[nome-do-projeto]/pulls)
+- Vá até a página de _Pull Requests_ do [repositório no GitHub](https://github.com/tryber/sd-026-a-project-recipes-app-full-stack/pulls)
 - Clique no botão verde _"New pull request"_
 - Clique na caixa de seleção _"Compare"_ e escolha a sua branch **com atenção**
 - Clique no botão verde _"Create pull request"_
 - Adicione uma descrição para o _Pull Request_ e clique no botão verde _"Create pull request"_
-- Volte até a [página de _Pull Requests_ do repositório](https://github.com/tryber/sd-0x-project-[nome-do-projeto]/pulls) e confira que o seu _Pull Request_ está criado
+- Volte até a [página de _Pull Requests_ do repositório](https://github.com/tryber/sd-026-a-project-recipes-app-full-stack/pulls) e confira que o seu _Pull Request_ está criado
 
   <br />
 </details>
@@ -157,7 +157,7 @@ Para garantir a qualidade do código, usaremos o [ESLint](https://eslint.org/) p
 
 Este projeto já vem com as dependências relacionadas ao _linter_ configuradas nos arquivos `package.json` nos seguintes caminhos:
 
-- `sd-0x-project-recipes-app-full-stack/app/backend/package.json`
+- `sd-026-a-project-recipes-app-full-stack/app/backend/package.json`
 
 Para rodar o `ESLint` em um projeto, basta executar o comando `npm install` dentro do projeto e depois `npm run lint`. Se a análise do `ESLint` encontrar problemas no seu código, tais problemas serão mostrados no seu terminal. Se não houver problema no seu código, nada será impresso no seu terminal.
 
