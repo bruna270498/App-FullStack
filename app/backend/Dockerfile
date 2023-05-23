@@ -1,13 +1,10 @@
-FROM node:16.14-alpine
+FROM node:16
 
-WORKDIR /app-backend
+WORKDIR /recipes-backend
 
 COPY ./package* ./
-
-RUN npm install
 
 COPY . .
 
 EXPOSE 3001
 
-ENTRYPOINT [ "npm", "run", "dev" ]
