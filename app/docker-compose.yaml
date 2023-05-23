@@ -1,27 +1,26 @@
 version: '3.9'
 services:
   frontend:
-    container_name: app_frontend
+    container_name: recipes_front
     build: ./frontend
     ports:
       - 3000:3000
-    working_dir: /app-frontend
+    working_dir: /recipes-frontend
     healthcheck:
       test: ["CMD", "lsof", "-t", "-i:3000"]
       timeout: 10s
       retries: 5
   backend:
-    container_name: app_backend
     build: ./backend
+    container_name: recipes_back
+    tty: true
+    stdin_open: true
+    command: bash
     ports:
       - 3001:3001
-    working_dir: /app-backend
-    command: dev 
+    working_dir: /recipes-backend
     volumes: 
-      - ./backend/src:/app-backend/src
-    depends_on:
-      db:
-        condition: service_healthy
+      - ./backend/src:/recipes-backend/src
     environment:
       - APP_PORT=3001
       - JWT_SECRET=jwt_secret
@@ -29,10 +28,6 @@ services:
       - DB_PASS=123456
       - DB_HOST=db
       - DB_PORT=3306
-    healthcheck:
-      test: ["CMD", "lsof", "-t", "-i:3001"]
-      timeout: 10s
-      retries: 5
   db:
     image: mysql:8.0.32
     container_name: db

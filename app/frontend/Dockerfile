@@ -1,5 +1,5 @@
 FROM node:16.14-alpine 
-WORKDIR /app-frontend
+WORKDIR /recipes-frontend
 COPY package.json ./
 COPY package-lock.json ./
 RUN npm install
