@@ -1,6 +1,7 @@
 import * as express from 'express';
 import errorHandler from './database/middlewares/errorHandler';
 import categoryRouter from './database/routes/categoryRouter';
+import typeRouter from './database/routes/TypeRouter';
 
 class App {
   public app: express.Express;
@@ -24,6 +25,7 @@ class App {
     this.app.use(express.json());
     this.app.use(accessControl);
     this.app.use('/meals', categoryRouter);
+    this.app.use('/type', typeRouter);
     this.app.use(errorHandler);
   }
 
