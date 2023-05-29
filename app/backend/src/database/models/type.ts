@@ -22,7 +22,7 @@ TypeKitchens.init(
   },
   {
     sequelize,
-    modelName: 'type_kitchen',
+    modelName: 'type_kitchens',
     timestamps: false,
     underscored: true,
   },
