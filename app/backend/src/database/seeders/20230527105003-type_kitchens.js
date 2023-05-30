@@ -8,19 +8,19 @@ module.exports = {
       name_type: 'Filipino'
     },
     {
-      name_type:'Japanese'
+      name_type:'Chinese'
     },
     {
       name_type: 'Italian'
     },
     {
-      name_type: 'Malaysian'
+      name_type: 'Brazilian'
     },
     {
       name_type: 'Canadian'
     },
     {
-      name_type: 'Indian'
+      name_type: 'British'
     }
     ], {});
   },
